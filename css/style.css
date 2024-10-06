@@ -1,104 +1,234 @@
+:root{
+    --schwarz: #000;
+    --weiß: #fff;
+    --lila: #B9B7DE;
+
+    /* -- Photostory Deluxe Farben -- */
+    --gelb: #FFDA4F;
+    --gelb-orange: #FFB430;
+    --orange: #FA7717;
+
+    /* -- Vegas Farben -- */
+    --vegas-blau: #1246FF;
+
+    /* -- Video Deluxe 2025 Farben -- */
+    --vd-lightblue: #12B1FF;
+    --vd-darkblue: #004C90;
+
+    /* -- Video Pro X16 Farben -- */
+    --vp-lightblue: #09B3F3;
+    --vp-light: #2D2D2D;
+    --vp-dark: #000000;
+
+    /* -- Snuggle Buddies Farben --*/
+    --sb-rosa: #FFB3CE;
+    --sb-blue: #A6D4FF;
+
+    /* -- Soundpoolcover Farben --*/
+    --sp-mattrosa: #D898A1;
+    --sp-purple: #977BED;
+
+    /* -- Bauhaus App Farben -- */
+    --ba-yellow: #FAEA00;
+    --ba-red: #F60515;
+    --ba-blue: #04B3ED;
+
+    /* -- Illustration Farben --*/
+    --illustrationen-pink: #ED89CD;
+
+    /* -- Schirftfarben */
+    --font: #333333;
+}
+
 *{
     margin: 0px;
     padding: 0px;
 }
 
-#wrapper{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+strong{
+    font-family: "Outfit-Bold";
 }
 
-section{
-    width: 80%;
+/* Fonts */
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Outfit-Bold";
+    color: var(--font);
 }
 
-.eintrag{
-    display: flex;
-    padding-top: 124px;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    gap: 64px;
+p, li, a{
+    font-family: "Outfit-Regular";
+    color: var(--font);
 }
 
-.section_header{
-    display: flex;
-    width: 100%;
-    align-items: flex-start;
-    gap: 60px;
+p{
+    font-family: "Outfit-Regular";
+    font-size: calc(10px + (26 - 10)  * ((100vw - 320px) / (1920 - 320)));
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-.section_header_text{
-    display: flex;
-    width: 76.9%;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
-    flex-shrink: 0;
+h3{
+    text-overflow: ellipsis;
+    font-family: "Outfit-Bold";
+    font-size: calc(17px + (57 - 17) * ((100vw - 320px) / (1920 - 320)));
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
 }
 
-.tags{
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
-    }
-
-.tag_psd1{
-    display: flex;
-    width: 203px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 55px;
-    background: #FFDA4F;
-}
-
-.tag_psd2{
-    display: flex;
-    width: 203px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 55px;
-    background: #FFB430;
-}
-
-.tag_psd3{
-    display: flex;
-    width: 203px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 55px;
-    background: #FA7717;
-}
-
-.eintrag_bild{
-    box-shadow: 19px 19px 24.3px 0px rgba(0, 0, 0, 0.15);
-    width: 100%;
-}
-
-.mehr_button{
-    display: flex;
-    width: 24.2%;
-    padding: 32px 45px 27px 64px;
-    justify-content: center;
-    align-items: center;
-    gap: 122px;
-    border-radius: 55px;
-    border: 2px solid #333;
-    color: #333;
-    font-family: Outfit;
-    font-size: 26px;
+h4{
+    font-size: calc(13px + (29 - 13)  * ((100vw - 320px) / (1920 - 320)));
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+
+/* -- Header -- */
+#header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color: var(--weiß);
+    z-index: 9000;
+}
+
+#header div{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#logo{
+    font-family: "Shrikhand";
+}
+
+#menu ul{
+    display: flex;
+    gap: 2em;
+    list-style: none;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: var(--schwarz);
+}
+
+/* -- About Me -- */
+#introduction{
+    width: 100%;
+    height: auto;
+    background-image: urL("/img/index/about-me-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 10%;
+    padding-bottom: 7.75em;
+    padding-top: 7.75em;
+}
+
+#introduction-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 7.75em;
+}
+
+#introduction-left{
+    width: 53%;
+}
+
+#aboutme{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#about-me-logo{
+    width: 100%;
+}
+
+#aboutme p{
+    width: 60%;
+}
+
+#bulletpoints{
+    background-image: url("/img/index/about-me-note-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
+}
+
+#bulletpoints>div{
+    width: 40%;
+    padding: 5%;
+}
+
+.about-me-bulletpointsheader{
+    margin-top: 1em;
+}
+
+.introbody{
+    font-size: calc(6px + (16 - 6)  * ((100vw - 320px) / (1920 - 320)));
+    margin-top: 1em;
+}
+
+#rahmen{
+    width: 45%;
+     filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
+
+}
+
+#roadmap{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-image: url("/img/index/inhalt-bg.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
+    display: none;
+}
+
+#roadmap-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#roadmap-container{
+    width: 80%;
+    margin: auto;
+    padding-top: 7em;
+}
+
+.roadmap-icon-container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4em;
+}
+
+.roadmap-icon-container div p{
+    text-align: center;
+}
+
+.roadmapicon{
+    width: 200px;
+    margin-bottom: 1em;
 }
 
 /* Allgemeines Seiten */
@@ -113,81 +243,198 @@ section{
 .header_icon{
 }
 
-/* Photostory Seite */
+/* Themen */
 
-.seite_intro{
-    width: 60.7%;
-    padding: auto;
-    margin-bottom: 7.75em;
-}
-
-.psd-new-icon{
-    gap: 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 42.6%;
-    margin-bottom: 7.75em;
-}
-
-.psd-new-icon-text{
-    gap: 2em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.landingpage-themen{
     width: 100%;
+    height: auto;
 }
-
-.psd-neuheiten{
-    gap: 4em;
+.themen-container{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.themen-header{
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 78.9%;
-    margin-bottom: 7.75em;
+    align-items: start;
+    gap: 5%;
+    margin-bottom: 5em;
 }
-
-.psd-neuheiten-text{
+.themen-icon{
+    width: calc(120px + (264 - 120)  * ((100vw - 320px) / (1920 - 320)));
+    filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
+}
+.themen-header-header{
+    display: flex;
+    align-items: baseline;
+    gap: 0.5em;
+}
+.themen-tags{
+    width: 100%;
+    display: flex;
+    /*justify-content: space-between;*/
     gap: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 76.9%;
 }
-
-.psd-social-media{
-    width: 100%;
-    height: 67.063em;
-    background-image: url(/img/psd-social-media-bg.png);
-}
-
-/* Fonts */
-
-p{
-    color: #333;
-    font-family: Outfit;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-h3{
-    color: #333;
-    text-overflow: ellipsis;
-    font-family: Outfit;
-    font-size: 57px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 160%;
-}
-
-h4{
-    color: #000;
+.tags{
+    width:  20%;
+    border-radius: 2em;
     text-align: center;
-    font-family: Outfit;
-    font-size: 29px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font-family: "Outfit-Bold";
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin-top: 1em;
+    margin-bottom:1em;
+}
+.themen-body{
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
+}
+.button-mehr-davon{
+    text-align: end;
+}
+.button-mehr-davon button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    width: 30%;
+    font-family: "Outfit-Bold";
+    font-size: calc(16px + (26 - 16)  * ((100vw - 320px) / (1920 - 320)));
+    border: solid 1px var(--font);
+    border-radius: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 3em;
+}
+
+#pd-branding{
+    background-color: var(--gelb);
+}
+#pd-layout{
+    background-color: var(--gelb-orange);
+}
+#pd-webdesign{
+    background-color: var(--orange);
+}
+
+#vegas-layout{
+    background-color: var(--vegas-blau);
+    color: var(--weiß);
+}
+
+#vd-branding{
+    background-color: var(--vd-lightblue);
+}
+#vd-layout{
+    background-color: var(--weiß);
+    border: solid 1px var(--font);
+}
+#vd-webdesign{
+    background-color: var(--vd-darkblue);
+    color: var(--weiß);
+}
+
+#vp-branding{
+    background-color: var(--vp-lightblue);
+}
+#vp-layout{
+    background-color: var(--weiß);
+    border: solid 1px var(--font);
+}
+#vp-webdesign{
+    background: linear-gradient(30deg, var(--vp-dark) 0%, var(--vp-light) 100%);
+    color: var(--weiß);
+}
+
+#sb-branding{
+    background-color: var(--sb-rosa);
+}
+#sb-html-css{
+    background: linear-gradient(90deg, var(--sb-rosa) 0%, var(--sb-blue) 100%);
+}
+#sb-webdesign{
+    background-color: var(--sb-blue);
+}
+
+#sp-grafikdesign{
+    background-color: var(--sp-mattrosa);
+}
+#sp-photoshop{
+    background-color: var(--sp-purple);
+}
+.sp-themen-container{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+.sp-button-mehr-davon{
+    text-align: end;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 3em;
+}
+.sp-button-mehr-davon button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    width: 30%;
+    font-family: "Outfit-Bold";
+    font-size: calc(16px + (26 - 16)  * ((100vw - 320px) / (1920 - 320)));
+    border: solid 1px var(--font);
+    border-radius: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 3em;
+}
+.themen-sp-header{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    gap: 5%;
+}
+.themen-sp-body{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
+}
+
+#ba-illustrationen{
+    background-color: var(--ba-yellow);
+}
+#ba-layout{
+    background-color: var(--ba-red);
+}
+#ba-appdesign{
+    background-color: var(--ba-blue);
+}
+
+#illustrationen{
+    background-color: var(--illustrationen-pink);
+}
+
+/* -- Breakpoints --*/
+@media screen and (max-width: 1024px){
+    
+}
+
+@media screen and (max-width: 768px){
+    
+}
+
+@media screen and (max-width: 480px){
+    
 }
