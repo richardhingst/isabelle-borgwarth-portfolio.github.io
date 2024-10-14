@@ -125,7 +125,7 @@ h4{
 #introduction{
     width: 100%;
     height: auto;
-    background-image: urL("/img/index/about-me-bg.png");
+    background-image: url("../img/index/about-me-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
