@@ -13,7 +13,7 @@
 
     /* -- Video Deluxe 2025 Farben -- */
     --vd-lightblue: #12B1FF;
-    --vd-darkblue: #004C90;
+    --vd-darkblue: #0071A5;
 
     /* -- Video Pro X16 Farben -- */
     --vp-lightblue: #09B3F3;
@@ -59,6 +59,7 @@ h1, h2, h3, h4, h5, h6{
 p, li, a{
     font-family: "Outfit-Regular";
     color: var(--font);
+    text-decoration: none;
 }
 
 p{
@@ -85,6 +86,24 @@ h4{
     line-height: normal;
 }
 
+h5{
+    text-overflow: ellipsis;
+    font-family: "Outfit-Bold";
+    font-size: calc(13px + (150 - 13) * ((100vw - 320px) / (1920 - 320)));
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+}
+
+h6{
+    text-overflow: ellipsis;
+    font-family: "Outfit-Regular";
+    font-size: calc(17px + (57 - 17) * ((100vw - 320px) / (1920 - 320)));
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
 
 /* -- Header -- */
 #header{
@@ -94,6 +113,7 @@ h4{
     height: auto;
     background-color: var(--weiß);
     z-index: 9000;
+    filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
 }
 
 #header div{
@@ -125,7 +145,7 @@ h4{
 #introduction{
     width: 100%;
     height: auto;
-    background-image: url("../img/index/about-me-bg.png");
+    background-image: urL("../img/index/about-me-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -138,7 +158,7 @@ h4{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width: 80%;
+    width: 70%;
     margin: auto;
     padding-bottom: 7.75em;
 }
@@ -162,7 +182,7 @@ h4{
 }
 
 #bulletpoints{
-    background-image: url("/img/index/about-me-note-bg.svg");
+    background-image: url("../img/index/about-me-note-bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
     filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
@@ -197,7 +217,7 @@ h4{
     width: 80%;
     height: auto;
     margin: auto;
-    background-image: url("/img/index/inhalt-bg.svg");
+    background-image: url("../img/index/inhalt-bg.svg");
     background-size: 100%;
     background-repeat: no-repeat;
     filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
@@ -240,8 +260,6 @@ h4{
     flex-direction: column;
 }
 
-.header_icon{
-}
 
 /* Themen */
 
@@ -250,7 +268,7 @@ h4{
     height: auto;
 }
 .themen-container{
-    width: 80%;
+    width: 70%;
     height: auto;
     margin: auto;
     padding-top: 3em;
@@ -266,6 +284,9 @@ h4{
 .themen-icon{
     width: calc(120px + (264 - 120)  * ((100vw - 320px) / (1920 - 320)));
     filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
+}
+.themen-icon-sb{
+    width: calc(120px + (732 - 120)  * ((100vw - 320px) / (1920 - 320)));
 }
 .themen-header-header{
     display: flex;
@@ -288,9 +309,25 @@ h4{
     margin-top: 1em;
     margin-bottom:1em;
 }
+.tags-sb{
+    width: 33%;
+    border-radius: 2em;
+    text-align: center;
+    font-family: "Outfit-Bold";
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin-top: 1em;
+    margin-bottom:1em;
+}
 .themen-body{
     width: 100%;
     height: auto;
+    filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
+}
+.themen-body-gallery{
+    width: 100%;
+    height: auto;
+    margin-bottom: 3.8%;
     filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
 }
 .button-mehr-davon{
@@ -314,6 +351,14 @@ h4{
     margin-top: 3em;
 }
 
+.gallery-row{
+    width: 100%;
+    display: flex;
+    gap: 4%;
+    height: auto;
+    filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
+}
+
 #pd-branding{
     background-color: var(--gelb);
 }
@@ -331,6 +376,7 @@ h4{
 
 #vd-branding{
     background-color: var(--vd-lightblue);
+    color: var(--weiß);
 }
 #vd-layout{
     background-color: var(--weiß);
@@ -343,6 +389,7 @@ h4{
 
 #vp-branding{
     background-color: var(--vp-lightblue);
+    color: var(--weiß);
 }
 #vp-layout{
     background-color: var(--weiß);
@@ -365,12 +412,14 @@ h4{
 
 #sp-grafikdesign{
     background-color: var(--sp-mattrosa);
+    color: var(--weiß);
 }
 #sp-photoshop{
     background-color: var(--sp-purple);
+    color: var(--weiß);
 }
 .sp-themen-container{
-    width: 80%;
+    width: 70%;
     height: auto;
     margin: auto;
     padding-top: 3em;
@@ -426,6 +475,17 @@ h4{
     background-color: var(--illustrationen-pink);
 }
 
+.illustrationen-tags{
+    width:  20%;
+    border-radius: 2em;
+    text-align: center;
+    font-family: "Outfit-Bold";
+    padding: 0.2em 0.7em;
+    margin-top: 1em;
+    margin-bottom:1em;
+}
+
+
 /* -- Breakpoints --*/
 @media screen and (max-width: 1024px){
     
@@ -437,4 +497,48 @@ h4{
 
 @media screen and (max-width: 480px){
     
+}
+
+/* -- Footer -- */
+
+.footer{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 7.75em;
+    margin-bottom: 4%;
+}
+
+.to-top{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.cta{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.footer-kontakt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.footer-social-row{
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+.footer-social{
+    display: flex;
+    align-items: center;
+    gap: 1em;
 }

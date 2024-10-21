@@ -20,6 +20,7 @@
     --vp-lightblue: #09B3F3;
     --vp-light: #2D2D2D;
     --vp-dark: #000000;
+    --vpx-bg: #222222;
 
     /* -- Snuggle Buddies Farben --*/
     --sb-rosa: #FFB3CE;
@@ -38,7 +39,7 @@
     --illustrationen-pink: #ED89CD;
 
     /* -- Schirftfarben */
-    --font: #333;
+    --font: #fff;
 }
 
 *{
@@ -48,6 +49,10 @@
 
 html{
     scroll-behavior: smooth;
+}
+
+body{
+    background-color: #222;
 }
 
 #wrapper{
@@ -110,13 +115,14 @@ h4{
     line-height: normal;
 }
 
+
 /* -- Header -- */
 #header{
     position: sticky;
     top: 0;
     width: 100%;
     height: auto;
-    background-color: var(--weiß);
+    background-color: var(--vpx-bg);
     z-index: 9000;
     filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
 }
@@ -133,7 +139,7 @@ h4{
 
 #logo{
     font-family: "Shrikhand";
-    color: var(--grau);
+    color: var(--weiß);
 }
 
 #menu ul{
@@ -144,7 +150,7 @@ h4{
 
 #menu ul li a{
     text-decoration: none;
-    color: var(--grau);
+    color: var(--weiß);
 }
 
 /* -- Hero -- */
@@ -196,6 +202,7 @@ h4{
 
 .themen-tags{
     width: 100%;
+    /*justify-content: space-between;*/
     gap: 1em;
     display: flex;
     justify-content: center;
@@ -203,7 +210,6 @@ h4{
     gap: 1em;
     align-self: stretch;
 }
-
 .tags{
     width:  20%;
     border-radius: 2em;
@@ -215,19 +221,21 @@ h4{
     margin-bottom:1em;
 }
 
-#pd-branding{
-    background-color: var(--gelb);
+#vp-branding{
+    background-color: var(--vp-lightblue);
+    color: var(--weiß);
 }
-#pd-layout{
-    background-color: var(--gelb-orange);
+#vp-layout{
+    border: solid 1px var(--font);
 }
-#pd-webdesign{
-    background-color: var(--orange);
+#vp-webdesign{
+    background: linear-gradient(30deg, var(--vp-dark) 0%, var(--vp-light) 100%);
+    color: var(--weiß);
 }
 
-/* -- New Icon -- */
+/*--Neues Icon--*/
 
-.psd-new-icon{
+.vpx-new-icon{
     width: 38%;
     display: inline-flex;
     align-items: center;
@@ -235,7 +243,7 @@ h4{
     margin-bottom: 7.75%;
 }
 
-.psd-icon-mit-text{
+.vpx-icon-mit-text{
     display: flex;
     width: 36%;
     flex-direction: column;
@@ -243,9 +251,9 @@ h4{
     gap: 1em;
 }
 
-/* -- Neuheiten -- */
+/*--Neuheiten Website--*/
 
-.psd-neuheiten{
+.vpx-neuheiten{
     width: 70.6%;
     display: flex;
     flex-direction: column;
@@ -269,7 +277,7 @@ h4{
     filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
 }
 
-.psd-laptop{
+.vpx-laptop{
    z-index: 1;
    width: 100%;
    display: flex;
@@ -278,7 +286,7 @@ h4{
    position: relative;
 }
 
-.psd-neuheiten-text{
+.vpx-neuheiten-text{
     width: 77.1%;
     display: flex;
     flex-direction: column;
@@ -286,32 +294,24 @@ h4{
     gap: 1em;
 }
 
-/* -- Styleboard -- */
+/*--Social Media--*/
 
-.psd-styleboard{
-    margin-bottom: 7.75%;
-    filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
-}
-
-/* -- Social Media -- */
-
-.psd-social-media{
-    width: 100%;
-    height: auto;
-    margin: auto;
-    filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
+.social-media{
+    width: 70.6%;
     position: relative;
+    z-index: 1;
+    margin-bottom: 7.75%;
 }
 
 .social-media-text{
-    z-index: 3;
     position: absolute;
-    left: 14.7%;
+    z-index: 2;
+    top: 85%;
 }
 
-/* -- CRM -- */
+/*--CRM--*/
 
-.psd-crm{
+.crm{
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -321,6 +321,7 @@ h4{
     height: auto;
     margin: auto;
     position: relative;
+    margin-bottom: 7.75%;
 }
 
 .crm-inhalt{
@@ -349,85 +350,129 @@ h4{
     z-index: 2;
     position: absolute;
     top: auto;
-    background: linear-gradient(225deg, #FFD94D 7.09%, #FA7716 85.58%), linear-gradient(225deg, #FFD94E 21%, #FFB330 75%), #D9D9D9;
+    background: linear-gradient(225deg, #026F7F 7.09%, #0B1D30 85.58%);
 }
 
-/* -- Handbuch und Youtube -- */
+/*--Minus Eins--*/
 
-.handbuch-youtube{
-    display: inline-flex;
-    width: 70%;
-    align-items: flex-end;
-    gap: 3.25em;
-    margin-bottom: 7.75%;
-    margin-top: -17%;
-    z-index: 4;
-}
-
-.handbuch{
-    width: 45.957em;
+.minus-eins{
+    width: 70.6%;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    align-items: center;
+    gap: 4em;
+    margin-bottom: 7.75%;
 }
 
-.youtube{
+.minus-eins-bilder{
     display: flex;
-    width: 36em;
+    align-items: center;
+    gap: 5.8em;
+    align-self: stretch;
+}
+
+.minus-eins-text{
+    width: 77.1%;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1em;
 }
 
-.youtube > h4{
-    align-self: stretch;
-    text-align: right;
+/*--Minus Eins PC--*/
+
+.minus-eins-pc{
+   z-index: 1;
+   width: 65.5%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
 }
 
-/* -- Affiliate -- */
-
-.psd-affiliate{
-    margin-bottom: 7.75%;
+.minus-eins-pc-inhalt{
+    width: 93%;
+    height: 65%;
+    z-index: 3;
+    top: 5%;
+    position: absolute;
+    overflow: scroll;
 }
 
-/* -- Keyvisual -- */
+.minus-eins-pc-bild{
+    z-index: 2;
+    filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
+}
 
-.psd-keyvisual{
-    background: linear-gradient(225deg, #FFD94D 7.09%, #FA7716 85.58%);
+/*--Minus Eins Mobile--*/
+
+.minus-eins-mobile{
+    width: 27.7%;
+    z-index: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    position: relative;
+ }
+ 
+ .minus-eins-mobile-inhalt{
+    width: 86.1%;
+    height: 93.7%;
+    z-index: 3;
+    top: 3%;
+    left: 6.9%;
+    position: absolute;
+    overflow: scroll;
+    border-radius: 2em;
+ }
+ 
+ .minus-eins-mobile-bild{
+    z-index: 2;
+    filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
+ }
+
+ .minus-eins-mobile-bild-nodge{
+    z-index: 4;
+    position: absolute;
+ }
+
+/*--Ultimate--*/
+
+.ultimate{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     padding-top: 7.75%;
     padding-bottom: 7.75%;
+    width: 100%;
     margin-bottom: 7.75%;
+    background: linear-gradient(225deg, #026F7F 7.09%, #0B1D30 85.58%);
 }
 
-.psd-keyvisual-inhalt{
-    display: inline-flex;
-    justify-content: center;
+.ultimate-inhalt{
+    width: 70.6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+}
+
+.ultimate-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 77.12%;
+    gap: 1em;
+}
+
+/*--Affiliate--*/
+
+.affiliate{
+    width: 70.6%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 1em;
-    width: 70%;
-}
-
-.keyvisual-links{
-    display: flex;
-    width: 42%;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
-}
-
-.keyvisual-text{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1em;
-    align-self: stretch;
-}
-
-.keyvisual-text > h4, .keyvisual-text > p{
-    color: var(--weiß);
+    margin-bottom: 7.75%;
 }
 
 /* -- Nächstes Projekt -- */

@@ -14,7 +14,7 @@
 
     /* -- Video Deluxe 2025 Farben -- */
     --vd-lightblue: #12B1FF;
-    --vd-darkblue: #004C90;
+    --vd-darkblue: #0071A5;
 
     /* -- Video Pro X16 Farben -- */
     --vp-lightblue: #09B3F3;
@@ -193,7 +193,6 @@ h4{
     font-style: normal;
     font-weight: 700;
 }
-
 .themen-tags{
     width: 100%;
     gap: 1em;
@@ -215,32 +214,17 @@ h4{
     margin-bottom:1em;
 }
 
-#pd-branding{
-    background-color: var(--gelb);
+#vd-branding{
+    background-color: var(--vd-lightblue);
+    color: var(--weiß);
 }
-#pd-layout{
-    background-color: var(--gelb-orange);
+#vd-layout{
+    background-color: var(--weiß);
+    border: solid 1px var(--font);
 }
-#pd-webdesign{
-    background-color: var(--orange);
-}
-
-/* -- New Icon -- */
-
-.psd-new-icon{
-    width: 38%;
-    display: inline-flex;
-    align-items: center;
-    gap: 1.5em;
-    margin-bottom: 7.75%;
-}
-
-.psd-icon-mit-text{
-    display: flex;
-    width: 36%;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
+#vd-webdesign{
+    background-color: var(--vd-darkblue);
+    color: var(--weiß);
 }
 
 /* -- Neuheiten -- */
@@ -251,7 +235,7 @@ h4{
     flex-direction: column;
     align-items: center;
     gap: 4em;
-    margin-bottom: 7.75%;
+    margin-bottom: 4%;
 }
 
 .laptop-inhalt{
@@ -286,29 +270,6 @@ h4{
     gap: 1em;
 }
 
-/* -- Styleboard -- */
-
-.psd-styleboard{
-    margin-bottom: 7.75%;
-    filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
-}
-
-/* -- Social Media -- */
-
-.psd-social-media{
-    width: 100%;
-    height: auto;
-    margin: auto;
-    filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
-    position: relative;
-}
-
-.social-media-text{
-    z-index: 3;
-    position: absolute;
-    left: 14.7%;
-}
-
 /* -- CRM -- */
 
 .psd-crm{
@@ -321,6 +282,7 @@ h4{
     height: auto;
     margin: auto;
     position: relative;
+    margin-bottom: 7.75%;
 }
 
 .crm-inhalt{
@@ -349,85 +311,152 @@ h4{
     z-index: 2;
     position: absolute;
     top: auto;
-    background: linear-gradient(225deg, #FFD94D 7.09%, #FA7716 85.58%), linear-gradient(225deg, #FFD94E 21%, #FFB330 75%), #D9D9D9;
+    background: linear-gradient(223deg, #0BD3FF 34.53%, #1798FF 83.93%);
 }
 
-/* -- Handbuch und Youtube -- */
+/*--Minus Eins--*/
 
-.handbuch-youtube{
-    display: inline-flex;
-    width: 70%;
-    align-items: flex-end;
-    gap: 3.25em;
-    margin-bottom: 7.75%;
-    margin-top: -17%;
-    z-index: 4;
-}
-
-.handbuch{
-    width: 45.957em;
+.minus-eins{
+    width: 70.6%;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    align-items: center;
+    gap: 4em;
+    margin-bottom: 7.75%;
 }
 
-.youtube{
+.minus-eins-bilder{
     display: flex;
-    width: 36em;
+    align-items: center;
+    gap: 5.8em;
+    align-self: stretch;
+}
+
+.minus-eins-text{
+    width: 77.1%;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1em;
 }
 
-.youtube > h4{
-    align-self: stretch;
-    text-align: right;
+/*--Minus Eins PC--*/
+
+.minus-eins-pc{
+   z-index: 1;
+   width: 65.5%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
 }
 
-/* -- Affiliate -- */
-
-.psd-affiliate{
-    margin-bottom: 7.75%;
+.minus-eins-pc-inhalt{
+    width: 93%;
+    height: 65%;
+    z-index: 3;
+    top: 5%;
+    position: absolute;
+    overflow: scroll;
 }
 
-/* -- Keyvisual -- */
+.minus-eins-pc-bild{
+    z-index: 2;
+    filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
+}
 
-.psd-keyvisual{
-    background: linear-gradient(225deg, #FFD94D 7.09%, #FA7716 85.58%);
+/*--Minus Eins Mobile--*/
+
+.minus-eins-mobile{
+    width: 27.7%;
+    z-index: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    position: relative;
+ }
+ 
+ .minus-eins-mobile-inhalt{
+    width: 86.2%;
+    height: 95%;
+    z-index: 3;
+    top: 2.5%;
+    left: 6.6%;
+    position: absolute;
+    overflow: scroll;
+    border-radius: 1.4em;
+ }
+ 
+ .minus-eins-mobile-bild{
+    z-index: 2;
+    filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
+ }
+
+ .minus-eins-mobile-bild-nodge{
+    z-index: 4;
+    position: absolute;
+ }
+
+/*--Ultimate--*/
+
+.ultimate{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     padding-top: 7.75%;
     padding-bottom: 7.75%;
+    width: 100%;
     margin-bottom: 7.75%;
+    background: linear-gradient(223deg, #0BD3FF 34.53%, #1798FF 83.93%);
 }
 
-.psd-keyvisual-inhalt{
-    display: inline-flex;
-    justify-content: center;
+.ultimate-inhalt{
+    width: 70.6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+}
+
+.ultimate-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 77.12%;
+    gap: 1em;
+}
+
+.ultimate-text > h4, .ultimate-text > p{
+    color: var(--weiß);
+}
+
+.ultimate-laptop-inhalt{
+    width: 81.7%;
+    height: 87%;
+    z-index: 3;
+    top: 2%;
+    position: absolute;
+    border-radius: 1em 1em 0em 0em;
+    overflow: scroll;
+}
+
+.vpx-laptop{
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+ }
+
+/*--Affiliate--*/
+
+.affiliate{
+    width: 70.6%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 1em;
-    width: 70%;
-}
-
-.keyvisual-links{
-    display: flex;
-    width: 42%;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
-}
-
-.keyvisual-text{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1em;
-    align-self: stretch;
-}
-
-.keyvisual-text > h4, .keyvisual-text > p{
-    color: var(--weiß);
+    margin-bottom: 7.75%;
 }
 
 /* -- Nächstes Projekt -- */
