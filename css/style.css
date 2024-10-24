@@ -45,6 +45,10 @@
     padding: 0px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 strong{
     font-family: "Outfit-Bold";
 }
@@ -111,13 +115,13 @@ h6{
     top: 0;
     width: 100%;
     height: auto;
-    background-color: var(--weiß);
     z-index: 9000;
+    background-color: var(--weiß);
     filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
 }
 
 #header div{
-    width: 80%;
+    width: 70%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -138,7 +142,7 @@ h6{
 
 #menu ul li a{
     text-decoration: none;
-    color: var(--schwarz);
+    color: var(--font);
 }
 
 /* -- About Me -- */
@@ -150,105 +154,57 @@ h6{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-y: 10%;
-    padding-bottom: 7.75em;
-    padding-top: 7.75em;
+    padding-bottom: 5%;
+    padding-top: 5%;
 }
 
 #introduction-content{
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
     width: 70%;
     margin: auto;
-    padding-bottom: 7.75em;
 }
 
 #introduction-left{
-    width: 53%;
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
 }
 
 #aboutme{
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
 }
 
 #about-me-logo{
-    width: 100%;
-}
-
-#aboutme p{
-    width: 60%;
-}
-
-#bulletpoints{
-    background-image: url("../img/index/about-me-note-bg.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 3em;
-}
-
-#bulletpoints>div{
-    width: 40%;
-    padding: 5%;
-}
-
-.about-me-bulletpointsheader{
-    margin-top: 1em;
+    width: 70%;
 }
 
 .introbody{
-    font-size: calc(6px + (16 - 6)  * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(6px + (26 - 6)  * ((100vw - 320px) / (1920 - 320)));
     margin-top: 1em;
 }
 
 #rahmen{
-    width: 45%;
+    width: 35%;
      filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
 
 }
 
-#roadmap{
-    width: 80%;
-    height: auto;
-    margin: auto;
-    background-image: url("../img/index/inhalt-bg.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
-    display: none;
-}
-
-#roadmap-header{
-    display: flex;
-    justify-content: center;
+.intro-social{
+    display: inline-flex;
     align-items: center;
+    gap: 3em;
 }
 
-#roadmap-container{
-    width: 80%;
-    margin: auto;
-    padding-top: 7em;
-}
-
-.roadmap-icon-container{
+.intro-social-punkt{
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 4em;
-}
-
-.roadmap-icon-container div p{
-    text-align: center;
-}
-
-.roadmapicon{
-    width: 200px;
-    margin-bottom: 1em;
+    align-items: center;
+    gap: 1em;
 }
 
 /* Allgemeines Seiten */

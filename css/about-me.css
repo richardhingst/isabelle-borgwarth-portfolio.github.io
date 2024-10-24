@@ -1,0 +1,315 @@
+:root{
+    --schwarz: #000;
+    --weiß: #fff;
+    --lila: #B9B7DE;
+
+    /* -- Photostory Deluxe Farben -- */
+    --gelb: #FFDA4F;
+    --gelb-orange: #FFB430;
+    --orange: #FA7717;
+
+    /* -- Vegas Farben -- */
+    --vegas-blau: #1246FF;
+
+    /* -- Video Deluxe 2025 Farben -- */
+    --vd-lightblue: #12B1FF;
+    --vd-darkblue: #0071A5;
+
+    /* -- Video Pro X16 Farben -- */
+    --vp-lightblue: #09B3F3;
+    --vp-light: #2D2D2D;
+    --vp-dark: #000000;
+
+    /* -- Snuggle Buddies Farben --*/
+    --sb-rosa: #FFB3CE;
+    --sb-blue: #A6D4FF;
+
+    /* -- Soundpoolcover Farben --*/
+    --sp-mattrosa: #D898A1;
+    --sp-purple: #977BED;
+
+    /* -- Bauhaus App Farben -- */
+    --ba-yellow: #FAEA00;
+    --ba-red: #F60515;
+    --ba-blue: #04B3ED;
+
+    /* -- Illustration Farben --*/
+    --illustrationen-pink: #ED89CD;
+
+    /* -- Schirftfarben */
+    --font: #333333;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+strong{
+    font-family: "Outfit-Bold";
+}
+
+/* Fonts */
+
+h2, h3, h4, h5, h6{
+    font-family: "Outfit-Bold";
+    color: var(--font);
+}
+
+p, li, a{
+    font-family: "Outfit-Regular";
+    color: var(--font);
+    text-decoration: none;
+}
+
+p{
+    font-family: "Outfit-Regular";
+    font-size: calc(10px + (26 - 10)  * ((100vw - 320px) / (1920 - 320)));
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h3{
+    text-overflow: ellipsis;
+    font-family: "Outfit-Bold";
+    font-size: calc(17px + (57 - 17) * ((100vw - 320px) / (1920 - 320)));
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+h4{
+    font-size: calc(13px + (29 - 13)  * ((100vw - 320px) / (1920 - 320)));
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h5{
+    text-overflow: ellipsis;
+    font-family: "Outfit-Bold";
+    font-size: calc(13px + (150 - 13) * ((100vw - 320px) / (1920 - 320)));
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+}
+
+h6{
+    text-overflow: ellipsis;
+    font-family: "Outfit-Regular";
+    font-size: calc(17px + (57 - 17) * ((100vw - 320px) / (1920 - 320)));
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+
+/* -- Header -- */
+#header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 9000;
+    background-color: var(--weiß);
+    filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
+}
+
+#header div{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#logo{
+    font-family: "Shrikhand";
+}
+
+#menu ul{
+    display: flex;
+    gap: 2em;
+    list-style: none;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: var(--font);
+}
+
+.about-me{
+    width: 100%;
+    background-image: url("../img/about-me/about-me-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 10%;
+    flex-direction: column;
+    gap: 0.3%;
+    padding-top: 3%;
+}
+
+.about-me-inhalt{
+    display: flex;
+    margin-left: 15%;
+    margin-right: 13%;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1.2%;
+    padding-bottom: 6%;
+}
+
+.about-me-links{
+    display: flex;
+    width: 52%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20%;
+    padding-top: 3%;
+}
+
+.about-me-links > h1{
+    font-family: "Shrikhand";
+    color: var(--font);
+    margin-bottom: 4%;
+    font-size: calc(10px + (116 - 10)  * ((100vw - 320px) / (1920 - 320)));
+}
+
+.about-me-zettel{
+    padding: 10.4% 7%;
+    background-image: url("../img/about-me/about-me-zettel.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
+}
+
+.about-me-bild-frame{
+    width: 50%;
+    filter: drop-shadow(15px 15px 10px rgba(0, 0,0, 0.15));
+}
+
+#kontakt{
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    gap: 2.3%;
+    background-color: var(--weiß);
+    margin-bottom: 7%;
+    margin-top: -0.3%;
+}
+
+.kontak-inhalt{
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 3em;
+}
+
+.kontakt-links{
+    display: flex;
+    width: 36.3%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.5em;
+}
+
+.kontakt-links > h1{
+    font-family: "Shrikhand";
+    color: var(--font);
+    font-size: calc(10px + (116 - 10)  * ((100vw - 320px) / (1920 - 320)));
+}
+
+.kontakt-items{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+    align-self: stretch;
+}
+
+.kontakt-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.kontakt-item-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+form{
+    display: flex;
+    height: fit-content;
+    width: 31%;
+    flex-direction: column;
+    gap: 2em;
+}
+
+input[type=text]{
+    width: 92%;
+    padding: 2.5% 4%;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 4.813em;
+    border: 2px solid #333;
+    font-family: "Outfit-Regular";
+    font-size: calc(10px + (26 - 10)  * ((100vw - 320px) / (1920 - 320)));
+    font-style: normal;
+    font-weight: 400;
+    color: var(--font);
+}
+
+input[type=email]{
+    width: 92%;
+    padding: 2.5% 4%;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 4.813em;
+    border: 2px solid #333;
+    display: flex;
+    font-family: "Outfit-Regular";
+    font-size: calc(10px + (26 - 10)  * ((100vw - 320px) / (1920 - 320)));
+    font-style: normal;
+    font-weight: 400;
+    color: var(--font);
+}
+
+textarea {
+    align-items: center;
+    resize: none;
+    height: 13em;
+    padding: 1em 2em;
+    border-radius: 1.813em;
+    border: 2px solid #333;
+    font-family: "Outfit-Regular";
+    font-size: calc(10px + (26 - 10)  * ((100vw - 320px) / (1920 - 320)));
+    font-style: normal;
+    font-weight: 400;
+    color: var(--font);
+}
+
+input[type=submit]{
+    display: flex;
+    width: 100%;
+    padding: 0.5em 2em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4.813em;
+    background: #333;
+    color: #FFF;
+    font-family: "Outfit-Regular";
+    font-size: calc(10px + (26 - 10)  * ((100vw - 320px) / (1920 - 320)));
+  }
