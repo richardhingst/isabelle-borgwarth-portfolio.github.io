@@ -21,11 +21,12 @@ Illustrationen Tag ist irgendwie kürzer als die anderen?
     <div id="wrapper">
         <header id="header">
             <div>
-                <h1 id="logo">Isabelle Borgwarth</h1>
+                <a href="#"><h1 id="logo">Isabelle Borgwarth</h1></a>
                 <nav id="menu">
                     <ul>
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#projekte">Projekte</a></li>
+                        <li><a href="about-me.html">About Me</a></li>
+                        <li><a href="./about-me.html#kontakt">Kontakt</a></li>
                     </ul>
                 </nav>
             </div>
@@ -33,79 +34,28 @@ Illustrationen Tag ist irgendwie kürzer als die anderen?
         <section id="introduction">
             <div id="introduction-content">
                 <div id="introduction-left">
-                    <img src="img/index/isabelle-borgwarth.svg" alt="Isabelle Borgwarth" id="about-me-logo"/>
-                    <div id="aboutme">
-                        <h3><nobr>About Me</nobr></h3>
-                        <p class="introbody">Ich bin Isabelle , 20 Jahre alt und lebe in Berlin. Ich bin gerade noch dabei, meine Ausbildung als Mediengestalterin für Digitalmedien zu beenden. Mein Fokus liegt dabei vor allem auf der Gestaltung von Webseiten und Brand Designs.</p>
+                    <div class="intro-text">
+                        <img src="img/index/isabelle-borgwarth.svg" alt="Isabelle Borgwarth" id="about-me-logo"/>
+                        <div id="aboutme">
+                            <p class="introbody">Ich bin Isabelle , 20 Jahre alt und Mediengestalterin aus Berlin.  Mein Fokus liegt vor allem auf der Gestaltung von Webseiten und Brand Designs.</p>
+                        </div>
                     </div>
-                    <div id="bulletpoints">
-                        <div>
-                            <h4>Ausbildung</h4>
-                            <ul>
-                                <li class="introbody"><strong>MAGIX Software GmbH (2022 - Jetzt)</strong> Ausbildung als Mediengestalterin</li>
-                                <li class="introbody"><strong>OSZ 1 Barnim (2019 - 2022) </strong> Abitur mit Schwerpunkt auf Gestaltung und Medientechnik</li>
-                            </ul>
-                            <h4 class="about-me-bulletpointsheader">Software</h4>
-                            <p class="introbody">Photoshop, Illustrator, Indesign, Figma, Premiere Pro, Procreate</p>
-                        </div>
-                        <div>
-                            <h4>Softskills</h4>
-                            <p class="introbody">Teamfähigkeit, Kreativität, Sorgfalt, Kritikfähigkeit, Engagement, Ehrgeiz</p>
-                            <h4 class="about-me-bulletpointsheader">Hardskills</h4>
-                            <p class="introbody">Grafik Design, Illustrationen, Brand Design, Webdesign, App Design, Videobearbeitung</p>
-                            <h4 class="about-me-bulletpointsheader">Kontakt</h4>
-                            <!-- Mailto einbauen? -->
-                            <p class="introbody">Email: isabelle.borgwarth@gmail.com<br>Telefon: 0151 65110055</p>
-                        </div>
+                    <div class="intro-social">
+                        <a href="mailto:isabelle.borgwarth@gmail.com" target="_blank"><div class="intro-social-punkt">
+                            <img src="img/index/email-logo-neutral.svg">
+                            <p>isabelle.borgwarth@gmail.com</p>
+                        </div></a>
+                        <a href="https://www.linkedin.com/in/isabelle-borgwarth" target="_blank"><div class="intro-social-punkt">
+                            <img src="img/index/linkedin-logo-neutral.svg" height="100%">
+                            <p>Isabelle Borgwarth</p>
+                        </div></a>
                     </div>
                 </div>
                 <img id="rahmen" src="img/index/about-me.png" alt="Ein Bild von Isabelle Borgwarth">
             </div>
-            <div id="roadmap">
-                <div id="roadmap-header">
-                    <h3>Roadmap</h3>
-                </div>
-                <div id="roadmap-container">
-                    <div class="roadmap-icon-container">
-                        <div>
-                            <img src="img/index/inhalt-photostory.svg" alt="Icon von Photostory Deluxe 2025" class="roadmapicon">
-                            <p>Photostory Deluxe<br>2025</p>
-                        </div>
-                        <div>
-                            <img src="img/index/inhalt-vegas.svg" alt="Icon von VEGAS Pro 22" class="roadmapicon">
-                            <p>VEGAS Pro 22</p>
-                        </div>
-                        <div>
-                            <img src="img/index/inhalt-vdlx.png" alt="Icon von Video Deluxe 2025" class="roadmapicon">
-                            <p>Video Deluxe 2025</p>
-                        </div>
-                        <div>
-                            <img src="img/index/inhalt-vpx.svg" alt="Icon von Video Pro X 16" class="roadmapicon">
-                            <p>Video Pro X 16</p>
-                        </div>
-                    </div>
-                    <div class="roadmap-icon-container">
-                        <div>
-                            <img src="img/index/inhalt-brandbook.svg" alt="Icon vom MAGIX Styleguide" class="roadmapicon">
-                            <p>MAGIX Styleguide<br>2025</p>
-                        </div>
-                        <div>
-                            <img src="img/index/inhalt-snuggle-buddies.svg" alt="Icon von Snuggle Buddies" class="roadmapicon">
-                            <p>SnuggleBuddies</p>
-                        </div>
-                        <div>
-                            <img src="img/index/inhalt-soundpool.png" alt="Icon für die Soundpoolcover" class="roadmapicon">
-                            <p>Soundpoolcover</p>
-                        </div>
-                        <div>
-                            <img src="img/index/inhalt-bauhaus.png" alt="Icon von der Bauhaus App" class="roadmapicon">
-                            <p>Bauhaus App</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
         <!-- Soundpoolcover -->
+        <div id="projekte"></div>
         <section class="landingpage-themen">
             <div class="sp-themen-container">
                 <div class="themen-sp-header">
@@ -288,18 +238,14 @@ Illustrationen Tag ist irgendwie kürzer als die anderen?
                 </div>
                 <img src="img/index/gallery.png" alt="Eine Übersicht von Mockups, auf denen Inhalte von der Bauhaus App präsentiert werden" class="themen-body-gallery"/>
                 <div class="gallery-row">
-                    <img src="img/index/gallery-katze.gif" alt="Eine Übersicht von Mockups, auf denen Inhalte von der Bauhaus App präsentiert werden" width="100%"/>
+                    <img src="img/index/gallery-katze.gif" alt="Eine Übersicht von Mockups, auf denen Inhalte von der Bauhaus App präsentiert werden" width="42%"/>
                     <img src="img/index/gallery-room.png" alt="Eine Übersicht von Mockups, auf denen Inhalte von der Bauhaus App präsentiert werden" width="54%"/>
-                <div class="button-mehr-davon">
-                </div>
-                <div class="button-mehr-davon">
-                </div>
             </div>
         </section>
         <div class="footer">
             <div class="to-top">
                 <p>Zum Anfang</p>
-                <a href="#hero"><img src="img/to-top.svg"></a>
+                <a href="#introduction"><img src="img/to-top.svg"></a>
             </div>
             <div class="cta">
                 <h6>Hat dir gefallen, was du gesehen hast?</h6>
@@ -307,11 +253,11 @@ Illustrationen Tag ist irgendwie kürzer als die anderen?
             </div>
             <div class="footer-kontakt">
                 <div class="footer-social-row">
-                    <a href="mailto:isabelle.borgwarth@gmail.com"><div class="footer-social">
+                    <a href="mailto:isabelle.borgwarth@gmail.com" target="_blank"><div class="footer-social">
                         <img src="img/email.svg" width="100%">
                         <p>isabelle.borgwarth@gmail.com</p>
                     </div></a>
-                    <a href="https://www.linkedin.com/in/isabelle-borgwarth"><div class="footer-social">
+                    <a href="https://www.linkedin.com/in/isabelle-borgwarth" target="_blank"><div class="footer-social">
                         <img src="img/linkedin.svg">
                         <p>Isabelle Borgwarth</p>
                     </div></a>
